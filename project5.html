@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin-left: 13%;
+            margin-right: 13%;
+        }
+
+        .nav-bar {
+            display: -webkit-inline-flex;
+            width: 100%;
+            height: 100px;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .nav-bar-title {
+            font-size: 24px;
+            text-decoration: none;
+            font-weight: 700;
+            color: black;
+            -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+            order: 1;
+        }
+
+        .nav-bar-row {
+            -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+            order: 2;
+            margin-left: 75%;
+            float: right;
+            font-size: 20px;
+        }
+
+        .nav-bar-row a {
+            text-decoration: none;
+        }
+
+        .row1 {
+            color: black;
+            font-weight: 100;
+            font-size: 14px;
+            margin-right: 5px;
+        }
+
+        .row1:hover {
+            color: gray;
+        }
+
+        .row2 {
+            background-color: #215FFF;
+            color: white;
+            font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+            font-weight: bold;
+            padding: 15px 30px;
+            font-size: 14px;
+            border-radius: 6px;
+            margin-left: 20px;
+            -webkit-transition: -webkit-box-shadow 0.3s;
+            transition: -webkit-box-shadow 0.3s;
+            transition: box-shadow 0.3s;
+            transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+        }
+
+        .row2:hover {
+            -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12),
+                0 2px 4px 0 rgba(0, 0, 0, 0.08);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12),
+                0 2px 4px 0 rgba(0, 0, 0, 0.08);
+        }
+
+        .main-info {
+            font-size: 32px;
+            font-weight: 100;
+            text-emphasis: s;
+            color: #9E9E9E;
+        }
+
+        .main-row {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            height: 50vh;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -ms-flex-line-pack: start;
+            align-content: flex-start;
+            margin-top: 100px;
+            font-family: 'montserrat', sans-serif;
+        }
+
+        .main-row a {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            width: 130px;
+            -webkit-box-flex: 1;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            height: 140px;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            -webkit-transition: -webkit-box-shadow 0.2s ease-out;
+            transition: -webkit-box-shadow 0.2s ease-out;
+            transition: box-shadow 0.2s ease-out;
+            transition: box-shadow 0.2s ease-out, -webkit-box-shadow 0.2s ease-out;
+            cursor: pointer;
+        }
+
+        .main-row a:hover {
+            -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+        }
+
+        .main-row-link1 {
+            background-color: #F23030;
+            font-size: 14px;
+            font-weight: bolder;
+            border-radius: 6px 0px 0px 0px;
+        }
+
+        .main-row-link2 {
+            background-color: #ff4c23;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+
+        .main-row-link3 {
+            background-color: #FF7919;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+
+        .main-row-link4 {
+            background-color: #FF9F19;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+
+        .main-row-link5 {
+            background-color: #EBC50C;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+
+        .main-row-link6 {
+            background-color: #E6D739;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+
+        .main-row-link7 {
+            background-color: #74D941;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+
+        .main-row-link8 {
+            background-color: #00CC44;
+            font-size: 14px;
+            font-weight: bolder;
+            border-radius: 0px 6px 0px 0px;
+        }
+
+        .main-row-link9 {
+            background-color: #0FC0C5;
+            font-size: 14px;
+            font-weight: bolder;
+            border-radius: 0px 0px 0px 6px;
+        }
+
+        .main-row-link10 {
+            background-color: #49C8F2;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+
+        .main-row-link11 {
+            background-color: #3D99F5;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+
+        .main-row-link12 {
+            background-color: #7961F2;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+
+        .main-row-link13 {
+            background-color: #9966FF;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+
+        .main-row-link14 {
+            background-color: #B366FF;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+
+        .main-row-link15 {
+            background-color: #E667E6;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+
+        .main-row-link16 {
+            background-color: #FF59AC;
+            font-size: 14px;
+            font-weight: bolder;
+            border-radius: 0px 0px 6px 0px;
+        }
+
+        .footer-end {
+            font-size: 12px;
+            color: #9E9E9E;
+            margin-top: 40px;
+        }
+
+        /* scroll bar */
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: gray;
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(114, 113, 113);
+        }
+
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="nav-bar">
+        <a class="nav-bar-title" href="#">Smallpdf</a>
+        <div class="nav-bar-row">
+            <a class="row1" href="#">Login</a>
+            <a class="row2" href="#">SignUp</a>
+        </div>
+    </div>
+    <div class="main-info">
+        <p>We make PDF easy.</p>
+    </div>
+    <div class="main-row">
+        <a class="main-row-link1" href="#">Compress PDF</a>
+        <a class="main-row-link2" href="#">PDF converter</a>
+        <a class="main-row-link3" href="#">PPT to PDF</a>
+        <a class="main-row-link4" href="#">PDF to PPT</a>
+        <a class="main-row-link5" href="#">JPG to PDF</a>
+        <a class="main-row-link6" href="#">PDF to JPG</a>
+        <a class="main-row-link7" href="#">EXCEL to PDF</a>
+        <a class="main-row-link8" href="#">PDF to EXCEL</a>
+
+        <a class="main-row-link9" href="#">Edit PDF</a>
+        <a class="main-row-link10" href="#">Word to PDF</a>
+        <a class="main-row-link11" href="#">PDF to Word</a>
+        <a class="main-row-link12" href="#">Merge PDF</a>
+        <a class="main-row-link13" href="#">Split PDF</a>
+        <a class="main-row-link14" href="#">Rotate PDF</a>
+        <a class="main-row-link15" href="#">eSign PDF</a>
+        <a class="main-row-link16" href="#">Unlock PDF</a>
+    </div>
+    <hr>
+    <footer class="footer-end">
+        <span class="footer-end-copy">©</span>
+        <span> - </span>
+        <span> Made with the love for myself</span>
+    </footer>
+</body>
+
+</html>
